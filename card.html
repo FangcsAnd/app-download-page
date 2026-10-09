@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bean · 名片</title>
+<meta name="description" content="Bean 的个人名片 · 广东深圳" />
+<link rel="stylesheet" href="card.css" />
+</head>
+<body>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <main class="card">
+    <div class="card-inner">
+      <div class="avatar">
+        <span>B</span>
+      </div>
+
+      <h1 class="name">Bean</h1>
+      <p class="title">产品 / 开发者</p>
+
+      <div class="location">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+        </svg>
+        <span>广东 · 深圳</span>
+      </div>
+
+      <p class="bio">专注移动端产品与体验设计，欢迎扫码加我微信交流。</p>
+
+      <button class="qr-trigger" id="qrTrigger">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm13-2h3v2h-3v-2zm-5 0h3v2h-3v-2zm2 3h3v2h-3v-2zm-2 0h2v2h-2v-2zm-1 3h3v2h-3v-2zm5 0h3v2h-3v-2z"/>
+        </svg>
+        查看微信二维码
+      </button>
+
+      <div class="actions">
+        <a class="action" id="downloadApp" href="index.html">
+          <span class="action-icon">⬇</span>
+          <span>下载 App</span>
+        </a>
+        <button class="action" id="copyLink">
+          <span class="action-icon">🔗</span>
+          <span>复制名片链接</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">© 2026 Bean</footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-body">
+      <button class="modal-close" data-close aria-label="关闭">&times;</button>
+      <h2>扫码加我微信</h2>
+      <div class="qr-wrap">
+        <img src="wechat-qr.png" alt="Bean 的微信二维码" />
+      </div>
+      <p class="tip">打开微信，扫一扫上方二维码添加我为好友。</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">链接已复制</div>
+
+  <script src="card.js"></script>
+</body>
+</html>
