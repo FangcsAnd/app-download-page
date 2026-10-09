@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>App 下载中心</title>
+<meta name="description" content="下载我们的 App，支持 Android 与 iOS。" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-logo">A</span>
+        <span class="brand-name">AppName</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">功能</a>
+        <a href="#download">下载</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <span class="badge">全新版本 v1.0.0 已发布</span>
+        <h1>随时随地，<span class="grad">掌上体验</span></h1>
+        <p class="subtitle">
+          下载 AppName，享受更快捷、更流畅的移动体验。支持 Android 与 iOS 全平台。
+        </p>
+
+        <div class="store-buttons">
+          <a class="store-btn" href="#" data-store="ios">
+            <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M16.365 1.43c0 1.14-.46 2.2-1.21 3.01-.79.86-2.08 1.53-3.14 1.44-.13-1.1.44-2.27 1.19-3.06.79-.84 2.14-1.47 3.16-1.39zM20.6 17.06c-.55 1.27-.82 1.84-1.53 2.96-.99 1.56-2.38 3.5-4.11 3.51-1.54.02-1.93-1-4.02-.99-2.09.01-2.52 1.01-4.06.99-1.73-.01-3.05-1.77-4.04-3.32C.04 16.5-.28 11.5 1.39 8.9c1.17-1.83 3.02-2.9 4.76-2.9 1.77 0 2.88 1 4.34 1 1.42 0 2.28-1 4.33-1 1.55 0 3.2.85 4.37 2.31-3.84 2.1-3.22 7.58.41 8.75z"/>
+            </svg>
+            <span class="store-text">
+              <small>App Store 下载</small>
+              <strong>iOS 版本</strong>
+            </span>
+          </a>
+
+          <a class="store-btn" href="#" data-store="android">
+            <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3.6 20.5c.4.9 1.4 1.4 2.4 1.1l1.9-.6c.4-.1.8 0 1.2.2.6.3 1.3.5 2 .5h1.8c.7 0 1.4-.2 2-.5.4-.2.8-.3 1.2-.2l1.9.6c1 .3 2-.2 2.4-1.1.3-.7.1-1.5-.4-2L9.6 6.3C9 6.7 8.1 7 7.1 7S5.2 6.7 4.6 6.3L2.1 10.7c-1.5 2.6-1.1 6.4 1.5 9.8z" opacity="0"/>
+              <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.25c-1.44-.65-3.07-1.01-4.87-1.01s-3.43.36-4.87 1.01L4.86 5.67c-.18-.28-.54-.37-.83-.22-.3.16-.42.54-.26.85L5.6 9.48C2.13 11.28.75 14.28.72 17.75h18.56c-.03-3.47-1.41-6.47-4.88-8.27zM7.5 14.25c-.41 0-.75-.34-.75-.75s.34-.75.75-.75.75.34.75.75-.34.75-.75.75zm9 0c-.41 0-.75-.34-.75-.75s.34-.75.75-.75.75.34.75.75-.34.75-.75.75z"/>
+            </svg>
+            <span class="store-text">
+              <small>直接下载 APK</small>
+              <strong>Android 版本</strong>
+            </span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span>✓ 免费下载</span>
+          <span>✓ 无广告</span>
+          <span>✓ 支持 v1.0.0+</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="screen-logo">A</div>
+            <p class="screen-title">AppName</p>
+            <p class="screen-sub">开启你的掌上之旅</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="download-section">
+      <h2>扫码快速下载</h2>
+      <p class="section-sub">使用手机相机扫描对应二维码，即可跳转到下载页面。</p>
+      <div class="qr-grid">
+        <div class="qr-card">
+          <div class="qr" data-qr="ios"></div>
+          <h3>iOS 用户</h3>
+          <p>扫描跳转 App Store</p>
+        </div>
+        <div class="qr-card">
+          <div class="qr" data-qr="android"></div>
+          <h3>Android 用户</h3>
+          <p>扫描下载 APK 安装包</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h2>为什么选择我们</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>极速体验</h3>
+          <p>精心优化的性能，启动更快，运行更流畅。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>安全可靠</h3>
+          <p>数据端到端加密，全面保护你的隐私。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>简洁易用</h3>
+          <p>清爽的界面设计，上手零门槛。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">☁️</div>
+          <h3>云端同步</h3>
+          <p>多设备无缝同步，随时随地访问。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>常见问题</h2>
+      <details>
+        <summary>下载后无法安装怎么办？</summary>
+        <p>Android 用户请在「设置 - 安全」中允许安装来自未知来源的应用；iOS 用户请在「设置 - 通用 - VPN与设备管理」中信任开发者。</p>
+      </details>
+      <details>
+        <summary>支持的最低系统版本是？</summary>
+        <p>iOS 13.0 及以上、Android 8.0（API 26）及以上。</p>
+      </details>
+      <details>
+        <summary>App 是免费的吗？</summary>
+        <p>是的，基础功能完全免费，高级功能可按需订阅。</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 AppName. 保留所有权利。</p>
+    <div class="footer-links">
+      <a href="#">隐私政策</a>
+      <a href="#">服务条款</a>
+      <a href="#">联系我们</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
